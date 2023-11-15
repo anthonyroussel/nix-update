@@ -3,6 +3,7 @@
   cargoLock.expand = pkgs.callPackage ./cargo-lock-expand { };
   cargoLock.update = pkgs.callPackage ./cargo-lock-update { };
   crate = pkgs.callPackage ./crate.nix { };
+  fetchurl = pkgs.callPackage ./fetchurl.nix {};
   gitea = pkgs.callPackage ./gitea.nix { };
   github = pkgs.callPackage ./github.nix { };
   gitlab = pkgs.callPackage ./gitlab.nix { };
